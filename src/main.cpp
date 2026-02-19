@@ -9,4 +9,10 @@ void loop() {
 
     Serial.print("FSR Value: ");
     Serial.println(fsrValue);
+
+    if (fsrValue > 400) {
+        Serial.println("Pressure detected");
+    } else {
+        Serial.println("No significant pressure");
+    }
 }
